@@ -5,7 +5,11 @@ import operator
 
 
 #re.findall(r"(\d+) (\w+) (\w+)"
+
 #[b - a for a, b in zip(p, p[1:])]
+
+#hash = hashlib.md5(s.encode("utf-8")).hexdigest()
+#print(hash)  Output: 5d41402abc4b2a76b9719d911017c592
 
 @dataclass(frozen=True)
 class Point:
