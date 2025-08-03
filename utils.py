@@ -10,6 +10,7 @@ import operator
 
 #hash = hashlib.md5(s.encode("utf-8")).hexdigest()
 #print(hash)  Output: 5d41402abc4b2a76b9719d911017c592
+#parsed = ast.literal_eval(line)
 
 @dataclass(frozen=True)
 class Point:
