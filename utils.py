@@ -2,6 +2,7 @@ import re
 from dataclasses import dataclass
 from functools import reduce
 import operator
+from itertools import groupby
 
 
 #re.findall(r"(\d+) (\w+) (\w+)"
@@ -96,6 +97,12 @@ def two_sum(nums, target):
             return num, delta
         cache.add(num)
     return None
+
+def process(s):
+    sequence = ""
+    for key, group in groupby(s):
+        sequence += str(len(list(group))) + key
+    return sequence
 
 def three_sum(nums, target):
     nums.sort()
